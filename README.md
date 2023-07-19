@@ -1,4 +1,5 @@
 # nerf_pytorch_detailed_annotation
+本项目是对nerf_pytorch的详细注释，其中仅包括llff数据的实现，其余数据未作实现
 # 代码中注释的含义  
 TODO: 待完成  
 SECTION: 模块，同一个模块中的代码关联紧密  
