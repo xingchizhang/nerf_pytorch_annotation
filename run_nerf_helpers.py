@@ -160,7 +160,7 @@ def get_rays(H, W, K, c2w):
                           indexing='ij')  # pytorch's meshgrid has indexing='ij'
     i = i.t()
     j = j.t()
-    # 图像坐标系到相机坐标系 TODO: 转变公式还需要再推导
+    # 图像坐标系到相机坐标系
     dirs = torch.stack([(i - K[0][2]) / K[0][0], -(j - K[1][2]) / K[1][1], -torch.ones_like(i)], -1)
     # 相机坐标系到世界坐标系
     # Rotate ray directions from camera frame to the world frame
@@ -180,7 +180,6 @@ def get_rays_np(H, W, K, c2w):
     return rays_o, rays_d
 
 def ndc_rays(H, W, focal, near, rays_o, rays_d):
-    # TODO: ndc还需理解
     # Shift ray origins to near plane
     t = -(near + rays_o[..., 2]) / rays_d[..., 2]
     rays_o = rays_o + t[..., None] * rays_d

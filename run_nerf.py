@@ -228,7 +228,7 @@ def create_nerf(args):
         embeddirs_fn, input_ch_views = get_embedder(args.multires_views, args.i_embed)
 
     # dir_:2. 建立网络模型
-    output_ch = 5 if args.N_importance > 0 else 4 # TODO:什么意思
+    output_ch = 5 if args.N_importance > 0 else 4
     skips = [4] # 跳跃连接
     # 粗网络
     model = NeRF(D=args.netdepth, W=args.netwidth,
@@ -748,8 +748,7 @@ def train():
 
     # SECTION:主循环训练
     # dir_:1.设置循环属性
-    # N_iters = 200000 + 1 # 总轮数
-    N_iters = 100 + 1  # 总轮数
+    N_iters = 200000 + 1 # 总轮数
     print('Begin')
     print('TRAIN views are', i_train)
     print('TEST views are', i_test)

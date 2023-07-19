@@ -220,7 +220,7 @@ def spherify_poses(poses, bds):
 
     # SECTION: 求出原始渲染位姿
     # dir_:1. 计算最优中心
-    # TODO: 找到离所有相机中心射线距离之和最短的点（为什么这样能求出来？） ###########
+    # 找到离所有相机中心射线距离之和最短的点
     def min_line_dist(rays_o, rays_d):
         A_i = np.eye(3) - rays_d * np.transpose(rays_d, [0, 2, 1])
         b_i = -A_i @ rays_o
@@ -273,7 +273,7 @@ def render_path_spiral(c2w, up, rads, focal, zdelta, zrate, rots, N):
     render_poses = []
     rads = np.array(list(rads) + [1.])
     hwf = c2w[:, 4:5] # 长宽焦距
-    # TODO: 为什么要这样计算？ ###########
+    # 循环确定位姿
     for theta in np.linspace(0., 2. * np.pi * rots, N + 1)[:-1]:
         c = np.dot(c2w[:3, :4], np.array([np.cos(theta), -np.sin(theta), -np.sin(theta * zrate), 1.]) * rads)
         z = normalize(c - np.dot(c2w[:3, :4], np.array([0, 0, -focal, 1.])))
