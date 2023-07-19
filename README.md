@@ -1,5 +1,5 @@
 # nerf_pytorch_detailed_annotation
-本项目是对nerf_pytorch的详细注释，其中仅包括llff数据的实现，其余数据未作实现  
+本项目是对nerf_pytorch的详细注释，其中仅包括llff数据格式的实现，其余数据格式未作实现  
 nerf_pytorch仓库位置：https://github.com/yenchenlin/nerf-pytorch
 # 代码中注释的含义  
 TODO: 待完成  
