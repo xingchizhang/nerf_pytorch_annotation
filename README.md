@@ -12,5 +12,7 @@ TODO: 待完成
 SECTION: 模块，同一个模块中的代码关联紧密  
 LINK: 链接，相同链接处的代码搭配理解，其中LINK:END依赖LINK:START  
 dir_: 小型目录，置于各模块或函数下  
-FUNCTION:函数模块，同一个模块中的函数关联紧密  
-EXPLAIN:函数的解释  
+FUNCTION: 函数模块，同一个模块中的函数关联紧密  
+EXPLAIN: 函数的解释  
+
+Ps: 建议在pycharm中将上述各注释类型提前设置成不同颜色，方便理解
