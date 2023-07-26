@@ -81,7 +81,7 @@ def _minify(basedir, factors=[], resolutions=[]):
         ext = imgs[0].split('.')[-1]
         args = ' '.join(['mogrify', '-resize', resizearg, '-format', 'png', '*.{}'.format(ext)])
         print(args)
-        # LINK:1_END
+        # LINK:2_END
         # 源代码方法:
         # os.chdir(imgdir) # 切换工作路径
         # check_output(args, shell=True)
