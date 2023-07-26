@@ -1,4 +1,4 @@
-# nerf_pytorch_detailed_annotation
+# annotation_nerf_pytorch
 仓库内容为nerf_pytorch的详细注释，可供复现参考  
 在加载数据部分，由于涉及到项目的实际需求，仓库仅对llff数据格式进行了实现，其余数据格式未作处理    
 附nerf_pytorch源码位置：https://github.com/yenchenlin/nerf-pytorch
