@@ -1,5 +1,5 @@
 # annotation_nerf_pytorch
-The content of this repository is a detailed chinese annotation of nerf_pytorch, which can be repeated for reference    
+This repository is a detailed chinese annotation of nerf_pytorch, which can be repeated for reference.    
 **Source code:**&emsp;[nerf_pytorch](https://github.com/yenchenlin/nerf-pytorch)
 # Note
 * In the part of loading data, because it involves the actual needs of the project, this repository only implements the **llff** data format.  
