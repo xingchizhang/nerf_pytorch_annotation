@@ -13,4 +13,4 @@ The content of this repository is a detailed chinese annotation of nerf_pytorch,
 * FUNCTION: Functions in the same section are closely related and work towards the same goal  
 * EXPLAIN: Interpretation of function  
 
-* Ps: It is recommended to set the above annotation types to different colors in advance in pycharm for easy understanding
+* **PS:**&emsp;It is recommended to set the above annotation types to different colors in advance in pycharm for easy understanding
